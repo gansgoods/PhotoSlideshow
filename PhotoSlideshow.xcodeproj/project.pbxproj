@@ -13,6 +13,7 @@
 		BE323935F769083B2160BA40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92F71E5E6F2BE60B6ADDEC4 /* ViewController.swift */; };
 		E10EE93AF5B680D5CFCA3DBC /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A218ABCD8CE4840594F74F91 /* ViewControllerTests.swift */; };
 		F03771FFBDB5E57E3CD3577E /* PhotoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583F7293984321EAB1FC8E88 /* PhotoManager.swift */; };
+		ASSETCATALOGBUILD123456 /* PhotoSlideshow.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ASSETCATALOG123456789ABC /* PhotoSlideshow.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		B9EEA5666615D00B5150E6A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F150F786DBEF75BB7F93B353 /* PhotoManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoManagerTests.swift; sourceTree = "<group>"; };
 		F92F71E5E6F2BE60B6ADDEC4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ASSETCATALOG123456789ABC /* PhotoSlideshow.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PhotoSlideshow.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -43,6 +45,7 @@
 			children = (
 				CC45DC8536F0A85E3B272A8D /* Sources */,
 				9EB2C0815911DE977522328F /* Products */,
+				ASSETCATALOG123456789ABC /* PhotoSlideshow.xcassets */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +114,7 @@
 			buildConfigurationList = 7C158BBD86406D58E50C60F7 /* Build configuration list for PBXNativeTarget "PhotoSlideshow" */;
 			buildPhases = (
 				81A204EFC3CC85ABBCECF559 /* Sources */,
+				RESOURCESBUILDPHASE12345 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -153,6 +157,17 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		RESOURCESBUILDPHASE12345 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ASSETCATALOGBUILD123456 /* PhotoSlideshow.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3B81254914654B0899522049 /* Sources */ = {
