@@ -1,0 +1,27 @@
+name: PhotoSlideshow
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    iOS: 15.0
+
+targets:
+  PhotoSlideshow:
+    type: application
+    platform: iOS
+    sources: 
+      - Sources
+    settings:
+      base:
+        INFOPLIST_FILE: Sources/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.PhotoSlideshow
+    info:
+      path: Sources/Info.plist
+      properties:
+        CFBundleDisplayName: PhotoSlideshow
+        UILaunchStoryboardName: LaunchScreen
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+          UISceneConfigurations:
+            UIWindowSceneSessionRoleApplication:
+              - UISceneConfigurationName: Default Configuration
+                UISceneDelegateClassName: $(PRODUCT_MODULE_NAME).SceneDelegate 

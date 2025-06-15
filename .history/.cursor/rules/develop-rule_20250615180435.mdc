@@ -1,0 +1,33 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+我希望用测试驱动开发的模式来开发，每次当你开发新功能，你应该尝试用测试驱动开发的模式来开发，并且跑测试用例，直到测试用例成功才算开发完成
+
+而且你应该每次都帮我运行测试用例而不是提醒我自己去运行测试用例，个别测试用例我看到你是这样运行的：
+xcodebuild test -scheme PhotoSlideshow -destination 'platform=iOS,id=00008120-001444192E63C01E,name=Lonely 的 iPhone'
+
+## Xcode版本配置说明
+
+### 当前Xcode设置
+使用默认的Xcode 16.3进行开发：
+
+```bash
+# 当前命令行工具指向默认Xcode 16.3
+sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+```
+
+### iOS版本兼容性说明
+- **开发环境**: Xcode 16.3 + iOS 18.4模拟器
+- **目标兼容性**: 虽然开发时使用iOS 18.4，但可以设置Deployment Target为更低版本（如iOS 12.0）来保证向后兼容
+- **测试策略**: 在新版本模拟器上开发，通过设置合适的Deployment Target确保在旧设备上运行
+
+### 模拟器使用建议
+推荐使用以下模拟器进行开发：
+- **iPad (A16)** - 适合iPad应用开发
+- **iPhone 15 Pro** - 适合iPhone应用开发
+- 使用iOS 18.4运行时，通过Deployment Target设置向后兼容
+
+### 历史记录
+- 2024-06-14: 尝试安装iOS 12.5模拟器，因兼容性问题已还原到默认配置
