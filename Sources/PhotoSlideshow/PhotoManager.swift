@@ -21,11 +21,38 @@ class PhotoManager {
         }
     }
     
-    // 获取所有照片（包括实况照片）
+    // 检查当前照片权限状态
+    func getCurrentPermissionStatus() -> PHAuthorizationStatus {
+        if #available(iOS 14, *) {
+            return PHPhotoLibrary.authorizationStatus(for: .readWrite)
+        } else {
+            return PHPhotoLibrary.authorizationStatus()
+        }
+    }
+    
+    // 获取所有媒体文件（照片、实况照片和视频）
+    func fetchAllMedia(completion: @escaping ([PHAsset]) -> Void) {
+        let fetchOptions = PHFetchOptions()
+        fetchOptions.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: false)]
+        // 不限制数量，获取所有媒体
+        
+        let fetchResult = PHAsset.fetchAssets(with: fetchOptions)
+        
+        var assets: [PHAsset] = []
+        fetchResult.enumerateObjects { asset, _, _ in
+            assets.append(asset)
+        }
+        
+        DispatchQueue.main.async {
+            completion(assets)
+        }
+    }
+    
+    // 获取所有照片（包括实况照片）- 更新为不限制数量
     func fetchPhotos(completion: @escaping ([PHAsset]) -> Void) {
         let fetchOptions = PHFetchOptions()
         fetchOptions.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: false)]
-        fetchOptions.fetchLimit = 50 // 限制获取50张照片
+        // 移除数量限制，获取所有照片
         
         let fetchResult = PHAsset.fetchAssets(with: .image, options: fetchOptions)
         

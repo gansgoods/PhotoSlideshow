@@ -65,4 +65,24 @@ class PhotoManagerTests: XCTestCase {
         
         wait(for: [expectation], timeout: 5.0)
     }
+    
+    // MARK: - 新增测试用例：检查当前权限状态
+    
+    func test_photoManager_shouldCheckCurrentPermissionStatus() {
+        // 测试PhotoManager应该有检查当前权限状态的方法
+        let currentStatus = photoManager.getCurrentPermissionStatus()
+        XCTAssertNotNil(currentStatus)
+    }
+    
+    func test_photoManager_shouldFetchAllPhotosIncludingVideos() {
+        // 测试PhotoManager应该能获取所有媒体文件（照片和视频）
+        let expectation = XCTestExpectation(description: "All media should be fetched")
+        
+        photoManager.fetchAllMedia { media in
+            XCTAssertNotNil(media)
+            expectation.fulfill()
+        }
+        
+        wait(for: [expectation], timeout: 5.0)
+    }
 } 
