@@ -3,15 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 63;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		245A99A84D83CCD9C0BAD313 /* PhotoManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F150F786DBEF75BB7F93B353 /* PhotoManagerTests.swift */; };
 		2C4F541D13FE20630C7D6942 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EEA5666615D00B5150E6A8 /* AppDelegate.swift */; };
+		8E9B2D76B3D99ECFE98EC018 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0C16E07A90561283C95AE5 /* SceneDelegate.swift */; };
 		BE323935F769083B2160BA40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92F71E5E6F2BE60B6ADDEC4 /* ViewController.swift */; };
-		C5A3B7D9E8F1234567890123 /* PhotoSlideshow.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1A2B3C4E5F6789012345678 /* PhotoSlideshow.xcassets */; };
 		E10EE93AF5B680D5CFCA3DBC /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A218ABCD8CE4840594F74F91 /* ViewControllerTests.swift */; };
-		SC3N3D3L3G4T3123456789AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = SC3N3D3L3G4T3987654321BA /* SceneDelegate.swift */; };
+		F03771FFBDB5E57E3CD3577E /* PhotoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583F7293984321EAB1FC8E88 /* PhotoManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,14 +26,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1156EDD74C79A2010330F80E /* PhotoSlideshowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoSlideshowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1156EDD74C79A2010330F80E /* PhotoSlideshowTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = PhotoSlideshowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		583F7293984321EAB1FC8E88 /* PhotoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoManager.swift; sourceTree = "<group>"; };
 		6825727656E35C2695360FCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		758C8E5E0BEF097D276EE22F /* PhotoSlideshow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoSlideshow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		758C8E5E0BEF097D276EE22F /* PhotoSlideshow.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = PhotoSlideshow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B0C16E07A90561283C95AE5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A218ABCD8CE4840594F74F91 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 		B9EEA5666615D00B5150E6A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D1A2B3C4E5F6789012345678 /* PhotoSlideshow.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PhotoSlideshow.xcassets; sourceTree = "<group>"; };
+		F150F786DBEF75BB7F93B353 /* PhotoManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoManagerTests.swift; sourceTree = "<group>"; };
 		F92F71E5E6F2BE60B6ADDEC4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		SC3N3D3L3G4T3987654321BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -40,7 +42,6 @@
 			isa = PBXGroup;
 			children = (
 				CC45DC8536F0A85E3B272A8D /* Sources */,
-				D1A2B3C4E5F6789012345678 /* PhotoSlideshow.xcassets */,
 				9EB2C0815911DE977522328F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,6 +49,7 @@
 		16545F1D1264B22FB3A9C26A /* PhotoSlideshowTests */ = {
 			isa = PBXGroup;
 			children = (
+				F150F786DBEF75BB7F93B353 /* PhotoManagerTests.swift */,
 				A218ABCD8CE4840594F74F91 /* ViewControllerTests.swift */,
 			);
 			path = PhotoSlideshowTests;
@@ -57,7 +59,8 @@
 			isa = PBXGroup;
 			children = (
 				B9EEA5666615D00B5150E6A8 /* AppDelegate.swift */,
-				SC3N3D3L3G4T3987654321BA /* SceneDelegate.swift */,
+				583F7293984321EAB1FC8E88 /* PhotoManager.swift */,
+				7B0C16E07A90561283C95AE5 /* SceneDelegate.swift */,
 				F92F71E5E6F2BE60B6ADDEC4 /* ViewController.swift */,
 			);
 			path = PhotoSlideshow;
@@ -108,7 +111,6 @@
 			buildConfigurationList = 7C158BBD86406D58E50C60F7 /* Build configuration list for PBXNativeTarget "PhotoSlideshow" */;
 			buildPhases = (
 				81A204EFC3CC85ABBCECF559 /* Sources */,
-				F1E2D3C4B5A6978012345678 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +131,8 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
 			};
 			buildConfigurationList = CC7DD5C224E54BC14707E828 /* Build configuration list for PBXProject "PhotoSlideshow" */;
 			compatibilityVersion = "Xcode 14.0";
@@ -140,6 +144,7 @@
 			);
 			mainGroup = 0496FA6B10FCD4FE9D3B09AF;
 			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 54;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -149,22 +154,12 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		F1E2D3C4B5A6978012345678 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C5A3B7D9E8F1234567890123 /* PhotoSlideshow.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		3B81254914654B0899522049 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				245A99A84D83CCD9C0BAD313 /* PhotoManagerTests.swift in Sources */,
 				E10EE93AF5B680D5CFCA3DBC /* ViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -174,7 +169,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C4F541D13FE20630C7D6942 /* AppDelegate.swift in Sources */,
-				SC3N3D3L3G4T3123456789AB /* SceneDelegate.swift in Sources */,
+				F03771FFBDB5E57E3CD3577E /* PhotoManager.swift in Sources */,
+				8E9B2D76B3D99ECFE98EC018 /* SceneDelegate.swift in Sources */,
 				BE323935F769083B2160BA40 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,7 +191,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = 562CRA7P6G;
 				INFOPLIST_FILE = Sources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -212,7 +207,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = 562CRA7P6G;
 				INFOPLIST_FILE = Sources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -228,7 +222,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 562CRA7P6G;
 				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
 				INFOPLIST_FILE = Sources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -236,10 +229,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				OTHER_LDFLAGS = (
-					"-framework",
-					XCTest,
-				);
+				OTHER_LDFLAGS = "-framework XCTest";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.PhotoSlideshowTests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -298,7 +288,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -314,7 +304,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 562CRA7P6G;
 				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
 				INFOPLIST_FILE = Sources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -322,10 +311,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				OTHER_LDFLAGS = (
-					"-framework",
-					XCTest,
-				);
+				OTHER_LDFLAGS = "-framework XCTest";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.PhotoSlideshowTests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -378,7 +364,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
