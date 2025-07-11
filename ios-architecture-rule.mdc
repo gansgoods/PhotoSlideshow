@@ -1,0 +1,35 @@
+# iOS Development Architecture Rule
+
+## Core Architecture Pattern
+采用 **SwiftUI + MVVM** 架构开发，使用 **Combine/Async-Await** 处理异步操作和响应式编程，通过 **@Observable** 和依赖注入实现清晰的数据流和可测试性。
+
+## Key Principles
+- **UI层**: 优先使用SwiftUI构建声明式用户界面
+- **架构模式**: MVVM分离关注点，ViewModel处理业务逻辑
+- **状态管理**: 使用@State、@StateObject、@ObservedObject管理视图状态
+- **异步编程**: async/await处理网络请求，Combine处理数据流
+- **依赖注入**: 通过协议抽象和环境对象实现松耦合
+- **模块化**: 使用Swift Package Manager组织代码结构
+- **测试**: SwiftUI Previews + 单元测试保证代码质量
+
+## Technology Stack
+```
+UI: SwiftUI (主) + UIKit (兼容)
+架构: MVVM + Clean Architecture (复杂项目)
+异步: async/await + Combine
+状态: @Observable + Environment Objects
+持久化: SwiftData/CoreData
+网络: URLSession + Codable
+测试: XCTest + SwiftUI Previews
+依赖管理: Swift Package Manager
+```
+
+## Best Practices
+- 保持ViewModel轻量，避免"Massive ViewModel"
+- 使用@MainActor确保UI更新在主线程
+- 通过Environment传递共享依赖
+- 编写可预览的SwiftUI组件
+- 遵循SOLID原则，特别是单一职责和依赖倒置
+
+---
+*遵循此规则确保代码的一致性、可维护性和现代化*
